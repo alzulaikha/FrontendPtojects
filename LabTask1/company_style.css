@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#f8f7f7;
+    margin:0;
+    line-height:1.6;
+}
+/* Header */
+header{
+    background:#081b33;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+nav{
+    margin-top:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#8a5864;
+}
+#home{
+    text-align:center;
+    padding:100px 30px;
+    color:white;
+    background:
+    linear-gradient(rgba(12, 11, 11, 0.5),rgba(0,0,0,.5)),
+    url("sources/company img.webp");
+    background-size:cover;
+}
+button{
+    background:#b69846;
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:-webkit-zoom-out;
+}
+
+button:hover{
+    background:#092444;
+    color:white;
+}
+#video{
+    background:#081b33;
+    text-align:center;
+    padding:100px 0;
+}
+
+#video h2{
+    color:#9e8c5a;
+}
+
+video{
+    width:700px;
+    border-radius:15px;
+    border:4px solid #c9a749;
+}
