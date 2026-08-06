@@ -1,0 +1,7 @@
+/* descendant combinator: any <a> inside <nav> */
+nav a {
+  color: #941111;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
