@@ -17,3 +17,33 @@ const emptyText = "";
 if (!emptyText) {
     console.log("An	empty	string");
 }
+
+//Control	Flow
+const grades=[85,	92,	58,	73,	40];
+//	loop	to	log	a	pass/fail	message	per	grade
+for (const grade of grades) {
+    if (grade >= 60) {
+        console.log(`${grade}: Pass`);
+    } else {
+        console.log(`${grade}: Fail`);
+    }
+}
+//switch statement	to	log	a	letter	grade	
+const score = 85;
+
+switch (true) {
+    case score >= 90:
+        console.log("Grade: A");
+        break;
+
+    case score >= 80:
+        console.log("Grade: B");
+        break;
+
+    case score >= 60:
+        console.log("Grade: C");
+        break;
+
+    default:
+        console.log("Grade: F");
+}
