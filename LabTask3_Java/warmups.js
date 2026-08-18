@@ -86,6 +86,18 @@ function sum(...numbers) {
 
     return total;
 }
+//Regular Function & Arrow Function
+const person = {
+    name: "Alzulaikha",
+
+    regularMethod: function () {
+        return this.name;
+    },
+
+arrowMethod: () => {
+    return this.name;
+}
+};
 
 
 
