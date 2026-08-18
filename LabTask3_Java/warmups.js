@@ -55,9 +55,17 @@ function isEvenDeclaration(number) {
          else {
         return false;
     }
-}
+};
 //Function Expression
 const isEvenExpression = function (number) {
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
+//Arrow Function
+const isEvenArrow = (number) => {
     if (number % 2 === 0) {
         return true;
     } else {
