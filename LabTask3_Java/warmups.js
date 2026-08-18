@@ -76,7 +76,16 @@ const isEvenArrow = (number) => {
 function greet(name = "Guest") {
     return `Hello, ${name}`;
 }
+//Rest Parameter
+function sum(...numbers) {
+    let total = 0;
 
+    for (const number of numbers) {
+        total += number;
+    }
+
+    return total;
+}
 
 
 
