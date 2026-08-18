@@ -72,6 +72,12 @@ const isEvenArrow = (number) => {
         return false;
     }
 };
+//default	parameter
+function greet(name = "Guest") {
+    return `Hello, ${name}`;
+}
+
+
 
 
 
