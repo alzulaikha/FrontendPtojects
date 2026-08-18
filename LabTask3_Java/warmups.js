@@ -47,3 +47,15 @@ switch (true) {
     default:
         console.log("Grade: F");
 }
+//Functions,All	Four Ways 
+//	function	declaration
+function isEvenDeclaration(number) {
+    if (number % 2 === 0) {
+        return true; }
+         else {
+        return false;
+    }
+}
+
+
+
