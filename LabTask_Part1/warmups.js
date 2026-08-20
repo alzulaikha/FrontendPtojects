@@ -40,3 +40,26 @@ function getOrderSummary({ customer, total }) {
 }
 
 console.log(getOrderSummary(order));
+/*.. 2.3 —	Spread & Rest..*/ 
+//separated arrays	
+const onlineOrders = [100, 200, 300];
+const inStoreOrders = [400, 500, 600];
+const allOrders = [...onlineOrders, ...inStoreOrders];
+console.log(allOrders)
+//Object Spread
+const order1 = {
+    id: 101,
+    customer: "Sara Ahmed",
+    total: 249.99,
+    status: "Shipped"
+};
+const updatedOrder = { ...order, status: "Cancelled" };
+console.log("Original order:", order);
+console.log("Cancelled order:", updatedOrder);
+
+//a	function using a rest parameter	
+function getOrderTotals(...totals) {
+    return totals;
+}
+
+console.log(getOrderTotals(100, 150, 200, 250));
