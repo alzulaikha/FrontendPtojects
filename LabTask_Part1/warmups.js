@@ -1,3 +1,4 @@
+/*.. 2.1 — Arrays: theBasics..*/ 
 const cities = ["Muscat", "Samail","Nizwa", "Sohar", "Sur","Salalah"];
 //push
 cities.push("Izki");
@@ -24,3 +25,18 @@ for (let i = 0; i < cities.length; i++) {
 for (const city of cities) {
     console.log(city);
 }
+
+/*.. 2.2 — Destructuring..*/ 
+const order = {	id:	101, customer:"Sara	Ahmed",	total: 249.99, status:"Shipped"	}; 
+const { customer, total } = order;
+console.log(customer); 
+console.log(total);  
+
+const numbers = [10, 20, 30, 40, 50];
+const [first, second, ...rest] = numbers;
+
+function getOrderSummary({ customer, total }) {
+    return `${customer} - $${total}`;
+}
+
+console.log(getOrderSummary(order));
