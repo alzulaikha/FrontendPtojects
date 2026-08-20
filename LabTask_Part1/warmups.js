@@ -16,3 +16,11 @@ console.log("Cities before adding duplicate:", cities.length);
 //Log .lenght after adding a duplicate entry
 cities.push("Muscat");
 console.log("Cities after adding duplicate:", cities.length);
+//fo loop
+for (let i = 0; i < cities.length; i++) {
+    console.log(cities[i]);
+}
+//for...of
+for (const city of cities) {
+    console.log(city);
+}
