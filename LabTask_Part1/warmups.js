@@ -70,10 +70,26 @@ const orders = [
     { id: 4, customer: "Sara", total: 300, status: "Shipped" },
     { id: 5, customer: "Alzulikha", total: 200, status: "Pending" },
     { id: 6, customer: "Maryam", total: 270, status: "Shipped" },
-    { id: 7, customer: "Mohammed", total: 70, status: "Cancelled" },
+    { id: 7, customer: "Ahmed", total: 70, status: "Cancelled" },
     { id: 8, customer: "Khalid", total: 350, status: "Shipped" }
 ];
 const combinedTotal = orders.reduce((sum, order) => {
     return sum + order.total;
 }, 0);
-console.log(combinedTotal);//reduce
+console.log("combined total of all orders:" ,combinedTotal);//reduce
+const shippedOrders = orders.filter(order => order.status === "Shipped"); 
+console.log("Order status=== Shipped: ",shippedOrders)//filter
+const customerNames = orders.map(order => order.customer); //map
+console.log("Customer Names:",customerNames)
+const firstOver200 = orders.find(order => order.total > 200); //find
+console.log("First order over $200: ", firstOver200)
+const hasCancelled = orders.some(order => order.status === "Cancelled"); //some
+console.log("Any order is cancelled? ", hasCancelled)
+const allPositive = orders.every(order => order.total > 0); //every
+console.log("All orders have a total greater than 0: ",allOrders)
+const sortedOrders = [...orders].sort((a, b) => b.total - a.total);
+console.log("Orders sorted by:",sortedOrders) //sort
+const highTotalCustomers = orders
+    .filter(order => order.total > 200)
+    .map(order => order.customer);
+console.log("High customer total:",highTotalCustomers); //filter + map
