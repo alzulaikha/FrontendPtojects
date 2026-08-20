@@ -63,3 +63,17 @@ function getOrderTotals(...totals) {
 }
 
 console.log(getOrderTotals(100, 150, 200, 250));
+const orders = [
+    { id: 1, customer: "Bader", total: 150, status: "Shipped" },
+    { id: 2, customer: "Saif", total: 250, status: "Pending" },
+    { id: 3, customer: "Ali", total: 100, status: "Cancelled" },
+    { id: 4, customer: "Sara", total: 300, status: "Shipped" },
+    { id: 5, customer: "Alzulikha", total: 200, status: "Pending" },
+    { id: 6, customer: "Maryam", total: 270, status: "Shipped" },
+    { id: 7, customer: "Mohammed", total: 70, status: "Cancelled" },
+    { id: 8, customer: "Khalid", total: 350, status: "Shipped" }
+];
+const combinedTotal = orders.reduce((sum, order) => {
+    return sum + order.total;
+}, 0);
+console.log(combinedTotal);//reduce
